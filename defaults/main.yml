@@ -8,7 +8,7 @@ openldap_server_rootpw_salt: YVsqIUIh4U2FwAx
 openldap_hashed_server_rootpw: "{{ openldap_server_rootpw | slappasswd(openldap_server_rootpw_salt) }}"
 
 #The self signed ssl parameters
-openldap_server_common_name: "{{ ansible_hostname }}"
+openldap_server_common_name: "{{ inventory_hostname }}"
 openldap_server_country: US
 openldap_server_state: oregon
 openldap_server_location: portland
