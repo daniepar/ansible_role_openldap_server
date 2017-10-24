@@ -32,4 +32,3 @@
 
 - name: Copy the ldap.conf configuration file
   template: src=ldap.conf.j2 dest={{ openldap_server_app_path }}/ldap.conf
-
